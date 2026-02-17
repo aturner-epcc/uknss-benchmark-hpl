@@ -36,7 +36,8 @@ Stable
 - [BabelStream v5.0](https://github.com/UoB-HPC/BabelStream/releases/tag/v5.0)
 
 Any modifications made to the source code and build/installation files must be 
-shared as part of the offerer submission.
+shared as part of the bidder submission under the same licence as the BabelStream
+software.
 
 ## Permitted modifications
 
@@ -44,10 +45,10 @@ Offerors are permitted to modify the benchmark in the following ways.
 
 **Programming Pragmas**
 
-- The Offeror may choose any of the programming models implemented in BabelStream.
-- The Offeror may modify the programming (e.g. OpenMP, OpenACC) pragmas in the benchmark as required  to permit execution on the proposed system, provided: 
-   - All modified sources and build scripts must be included in the RFP response.
-   - Any modified code used for the response must continue to be a valid program (compliant to the standard being proposed in the Offeror's response).
+- The bidder may choose any of the programming models implemented in BabelStream.
+- The bidder may modify the programming (e.g. OpenMP, OpenACC) pragmas in the benchmark as required  to permit execution on the proposed system, provided: 
+   - All modified sources and build scripts must be made available under the same licence as the BabelStream software
+   - Any modified code used for the response must continue to be a valid program (compliant to the standard being proposed in the bidder's response).
 
 **Memory Allocation**
 
@@ -56,7 +57,7 @@ Offerors are permitted to modify the benchmark in the following ways.
 
 **Concurrency & Affinity**
 
-- The Offeror may change the kernel launch configurations, type of memory management (e.g. CUDA managed memory, separate host and device pointers etc.).
+- The bidder may change the kernel launch configurations, type of memory management (e.g. CUDA managed memory, separate host and device pointers etc.).
 
 ### Manual build
 
@@ -169,7 +170,7 @@ The following arguments will typically be used to modify its runtime behaviour:
   memory tests). This option can be used to ensure all accelerator devices on 
   a node are tested.
 
-Example run lines from testing on the [IsambardAI]() system
+Example run lines from testing on the [IsambardAI](https://docs.isambard.ac.uk/specs/#system-specifications-isambard-ai-phase-2) system
 
 **CPU memory (OpenMP):**
 
@@ -204,8 +205,8 @@ no explicit validation test is needed.
 
 We supply example job submission scripts:
 
-- [IsambardAI CPU bandwidth]()
-- [IsambardAI GPU bandwidth]()
+- [IsambardAI CPU bandwidth](run_cpu_isambardai.sh)
+- [IsambardAI GPU bandwidth](run_cuda_isambardai.sh)
 
 ## Reporting results
 
@@ -213,20 +214,23 @@ The primary figure of merit (FoM) is the Triad rate (MB/s).
 
 The bidder should provide:
 
+- The minimum, maximum and mean Triad rate across all nodes/devices
+  for the two test configurations
 - Details of any changes made to the BabelStream source code
   and modifications to any build files (e.g. configure scripts, makefiles)
 - Details of the build process for the BabelStream software 
   for both the host (CPU) and device (GPU) versions
 - Details on how the tests were run, including any batch job submission
   scripts and options provided to BabelStream at runtime
-- All data printed to STDOUT by the BabelStream software
+- All data printed to STDOUT by the BabelStream software for 
+  all runs of the benchmark on all nodes
 
 ## Example performance data
 
 Example performance data from IsambardAI.
 
-- [IsambardAI CPU memory performance]()
-- [IsambardAI GPU memory performance]()
+- [IsambardAI CPU memory performance](example_output/BabelStream-CPU-2345261.out)
+- [IsambardAI GPU memory performance](example_output/BabelStream-CUDA-2344898.out)
 
 ## License
 

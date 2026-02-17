@@ -1,0 +1,24 @@
+Lmod Warning:
+'cray-mpich' requires a network targeting module to be loaded.
+Try 'module avail craype-network' to list the available network
+ targeting modules. 
+While processing the following module(s):
+    Module fullname   Module Filename
+    ---------------   ---------------
+    PrgEnv-gnu/8.6.0  /opt/cray/pe/lmod/modulefiles/core/PrgEnv-gnu/8.6.0.lua
+
+BabelStream
+Version: 5.0
+Implementation: OpenMP
+Running kernels 100 times
+Precision: double
+Array size: 8891.9 MB (=8.9 GB)
+Total size: 26675.8 MB (=26.7 GB)
+Init: 0.143378 s (=186051.867106 MBytes/sec)
+Read: 0.485833 s (=54907.321568 MBytes/sec)
+Function    MBytes/sec  Min (sec)   Max         Average     
+Copy        1751638.946 0.01015     0.03203     0.01082     
+Mul         1665577.965 0.01068     0.03715     0.01118     
+Add         1703432.068 0.01566     0.01654     0.01612     
+Triad       1730906.365 0.01541     0.03137     0.01633     
+Dot         1577779.397 0.01127     0.01659     0.01161     
