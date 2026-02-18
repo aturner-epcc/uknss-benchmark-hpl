@@ -21,7 +21,7 @@ Stable
 ## Building the benchmark
 
 **Important:** All results submitted should be based on a version of HPL that
-meets Top500 submission guidelines.
+meets [Top500 submission guidelines](https://top500.org/resources/frequently-asked-questions/).
 
 ### Permitted modifications
 
