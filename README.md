@@ -35,13 +35,13 @@ submission guidelines.
 The bidder is required to run the following tests
 
 - Single node HPL performance
-  + Single node HPL runs across all compute nodes that run for at least 30 minutes
+  + Single node HPL runs across all compute nodes that run for at least 1 hour.
   + The difference between the maximum measured single-node performance and the minimum
     measured single-node performance must be equal to or less than 5% of the mean measured single-node performance.
 - Full system HPL performance
   + A full system run of HPL using a minimum of 99% of all compute nodes under Top500/Green500 
-    conditions that runs for at least 12 hours
-  + This run should provide data for a valid Top500/Green500 submission including power draw data
+    conditions that runs for at least 12 hours.
+  + This run should provide data for a valid Top500/Green500 submission including power draw data.
 
 ## Reporting results
 
