@@ -49,12 +49,13 @@ The primary figure of merit (FoM) is the HPL performance in Gflops.
 
 The bidder should provide:
 
-- The minimum, maximum and mean single node HPL performance across all nodes
+- For the single node runs: the minimum, maximum and mean single node HPL performance
+  across all nodes
 - Details on how the tests were run, including any batch job submission
   scripts and HPL input files
-- All data printed to STDOUT by the HPL software for all HPL runs 
-- Data on total energy use (in kWh) for each run and peak power draw (in kW)
-  for each HPL run
+- All data printed to STDOUT by the HPL software for all HPL runs (single node and full system)
+- Data on energy use (in kWh) for each HPL run and peak power draw (in kW)
+  for each HPL run (per node for single node runs and aggregate for full system runs)
 
 ## License
 
