@@ -1,7 +1,7 @@
-# UK-NSS High Performance Linpack (HPL) benchmark
+# UK-NNSS High Performance Linpack (HPL) benchmark
 
 This repository contains the instructions for running the standard HPL
-benchmark as part of the UK-NSS procurement.
+benchmark as part of the UK-NNSS procurement.
 
 ## Status
 
