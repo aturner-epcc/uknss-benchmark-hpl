@@ -11,12 +11,12 @@ Stable
 
 - @aturner-epcc ([https://github.com/aturner-epcc](https://github.com/aturner-epcc))
 
-## Overview
+**Important:** Please do not contact the benchmark maintainers directly with any questions.
+All questions on the benchmark must be submitted via the procurement response mechanism.
 
-### Software
+## Software
 
 - [HPL](https://www.netlib.org/benchmark/hpl/)
-
 
 ## Building the benchmark
 
